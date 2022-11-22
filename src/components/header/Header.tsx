@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Layout } from 'antd';
 
-import images from '../config/images';
+import images from '../../config/images';
 
 const { Header } = Layout;
 
@@ -18,6 +18,7 @@ const ThunkableHeader: FC = () => {
           background: '#F7F9FD',
           boxShadow: '0px -1px 4px rgba(0, 0, 0, 0.203436)',
           height: 'auto',
+          zIndex: 1,
         }}
       >
         <img
