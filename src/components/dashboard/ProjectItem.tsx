@@ -42,6 +42,8 @@ const ProjectItem: FC<ProjectItemProps> = ({
   confirmNewProject,
   removeProject,
 }) => {
+  // currentProjectName can be used to later rename a project without modifying the project timestamp
+  // see renameProject handler from useProjectDashboard custom hook
   const [currentProjectName, setCurrentProjectName] = useState<string>(name || '');
   const [isEditing, setIsEditing] = useState<boolean>(false);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
