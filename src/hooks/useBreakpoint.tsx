@@ -10,6 +10,7 @@ const useBreakpoint = () => {
   
   useEffect(() => {
     if (xs || sm) setIsMobile(true)
+    else setIsMobile(false)
   }, [xs, sm, md, lg, xl, xxl])
 
   return {
