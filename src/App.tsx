@@ -1,24 +1,15 @@
 import React from 'react';
-
+ 
 import './App.css';
 
-import AddProjectButton from './components/buttons/AddProjectButton';
-import ThunkableHeader from './components/Header';
+import MyProjectsDashboard from './components/dashboard/MyProjectsDashboard';
+import ThunkableHeader from './components/header/Header';
 
 function App() {
   return (
     <div className="App">
       <ThunkableHeader />
-      <div style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'flex-end',
-        alignItems: 'center',
-        marginRight: '130px',
-      }}
-      >
-        <AddProjectButton />
-      </div>
+      <MyProjectsDashboard />
     </div>
   );
 }
