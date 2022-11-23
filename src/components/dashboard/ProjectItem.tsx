@@ -60,6 +60,7 @@ const ProjectItem: FC<ProjectItemProps> = ({
       removeProject(id)
     } else {
       confirmNewProject(id, e.currentTarget.value)
+      setIsEditing(false)
     }
   }
 

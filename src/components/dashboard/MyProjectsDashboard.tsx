@@ -43,7 +43,7 @@ const MyProjectsDashboard: FC = () => {
             {projects.map((project) => {
               return (
                 <ProjectItem
-                  key={`${project.id}_${new Date()}`}
+                  key={project.id}
                   id={project.id}
                   name={project.name}
                   created_at={project.created_at}
